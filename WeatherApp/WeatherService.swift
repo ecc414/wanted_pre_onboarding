@@ -35,11 +35,9 @@ class WeatherService {
             return value
         }
     }
-    
-    func getWeather(completion: @escaping (Result<WeatherResponse,NetWorkError>) -> Void){
-        
+    func getWeather(city : String, completion: @escaping (Result<WeatherResponse,NetWorkError>) -> Void){
         //API 호출을 위한 URL
-        let url = URL(string: "https://api.openweathermap.org/data/2.5/weather?q=seoul&appid=\(apiKey)&lang=kr&units=metric")
+        let url = URL(string: "https://api.openweathermap.org/data/2.5/weather?q=\(city)&appid=\(apiKey)&lang=kr&units=metric")
         guard let url = url else {
             return completion(.failure(.badUrl))
         }
@@ -50,7 +48,7 @@ class WeatherService {
             }
             
             //Data 타입으로 받은 리턴을 디코드
-            let weatherResponse = try? JSONDecoder().decode(WeatherResponse.self, from: data)
+            let weatherResponse = try?  JSONDecoder().decode(WeatherResponse.self, from: data)
             
             //성공
             if let weatherResponse = weatherResponse {
@@ -60,6 +58,6 @@ class WeatherService {
                 completion(.failure(.decodingError))
             }
         }.resume()  //이 dataTask 시작
-
     }
+    
 }
