@@ -35,6 +35,7 @@ class WeatherService {
             return value
         }
     }
+    
     func getWeather(city : String, completion: @escaping (Result<WeatherResponse,NetWorkError>) -> Void){
         //API 호출을 위한 URL
         let url = URL(string: "https://api.openweathermap.org/data/2.5/weather?q=\(city)&appid=\(apiKey)&lang=kr&units=metric")
@@ -52,7 +53,6 @@ class WeatherService {
             
             //성공
             if let weatherResponse = weatherResponse {
-                print(weatherResponse)
                 completion(.success(weatherResponse))   //성공한 데이터 저장
             }else {
                 completion(.failure(.decodingError))

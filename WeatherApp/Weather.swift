@@ -10,23 +10,21 @@ import UIKit
 
 //API로부터 받을 값을 저장할 모델
 struct WeatherResponse : Decodable {
-    let weather : [Weather]
-    let main    : Main
-    let name    : String
-}
-
-struct Preview {
-    let city     : String
-    let temp     : Double
-    let humidity : Double
-    var icon     : String
+    let weather    : [Weather]
+    let main       : Main
+    let wind       : Wind
+    var name       : String
+    let visibility : Int
+    let clouds     : Clouds
 }
 
 struct Main : Decodable {
-    let humidity : Double
-    let temp     : Double
-    let temp_min : Double
-    let temp_max : Double
+    let humidity   : Double
+    let temp       : Double
+    let temp_min   : Double
+    let temp_max   : Double
+    let feels_like : Double
+    let pressure   : Int
 }
 
 struct Weather : Decodable {
@@ -34,4 +32,13 @@ struct Weather : Decodable {
     let main        : String
     let description : String
     let icon        : String
+}
+
+struct Wind : Decodable {
+    let speed : Double
+    let deg   : Int
+}
+
+struct Clouds : Decodable {
+    let all : Int
 }

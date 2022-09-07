@@ -17,18 +17,15 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splash" translatesAutoresizingMaskIntoConstraints="NO" id="AZo-os-4FE">
-                                <rect key="frame" x="100" y="341" width="214" height="214"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="AZo-os-4FE" secondAttribute="height" multiplier="1:1" id="gwT-jP-dsh"/>
-                                </constraints>
+                                <rect key="frame" x="-508.5" y="0.0" width="1431" height="896"/>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="AZo-os-4FE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="JDt-qf-syN"/>
-                            <constraint firstItem="AZo-os-4FE" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="UuI-kJ-ybu"/>
-                            <constraint firstItem="AZo-os-4FE" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="soN-U6-E9w"/>
+                            <constraint firstItem="AZo-os-4FE" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="Xek-xi-UzI"/>
+                            <constraint firstItem="AZo-os-4FE" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="aLB-gn-x6r"/>
+                            <constraint firstAttribute="bottom" secondItem="AZo-os-4FE" secondAttribute="bottom" id="e48-PV-mMe"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -38,7 +35,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="splash" width="1536" height="1046"/>
+        <image name="splash" width="1431" height="2048"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
