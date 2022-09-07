@@ -1,7 +1,7 @@
 # wanted_pre_onboarding
 원티드 프리온보딩 사전과제
 
-첫 번째 화면
+# 첫 번째 화면
 
 
 <img src = "https://user-images.githubusercontent.com/96690194/188861575-2cff2a11-6850-4823-a6a2-2fad26e5bf63.PNG" width="30%" height="30%">
@@ -17,7 +17,7 @@
 ---
 
 
-두 번째 화면
+# 두 번째 화면
 
 
 <img src = "https://user-images.githubusercontent.com/96690194/188861636-bae5f3fb-9e42-4560-8c1e-3b11dcff5860.PNG" width="30%" height="30%">
